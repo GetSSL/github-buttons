@@ -28,9 +28,7 @@ app.get('/stars/:user([a-z0-9-_]+)/:repo([a-z0-9-_]+)', function(req, res){
         var stat = fs.statSync(output);
         var now = new Date().getTime();
 
-        if (now > stat.mtime.getTime() + expire) {
-            console.log("stat", stat);
-            console.log("cached button", output);
+        if (now < stat.mtime.getTime() + expire) {
             return res.sendfile(output);
         }
     }
@@ -42,7 +40,6 @@ app.get('/stars/:user([a-z0-9-_]+)/:repo([a-z0-9-_]+)', function(req, res){
                 page.render(output, function () {
                     gm(output).trim().write(output, function (err) {
                         if (!err) {
-                            console.log('btn created', user, repo);
                             res.sendfile(output);
                         } else {
                             res.send(500, "Failed to generate the button");
