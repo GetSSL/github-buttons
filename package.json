@@ -1,0 +1,12 @@
+{
+  "name": "github-image-buttons",
+  "description": "Generate static star count buttons for Github repos",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "~3.15.2",
+    "gm": "~1.16.0",
+    "phantom": "~0.6.5",
+    "marked": "~0.3.2"
+  }
+}
