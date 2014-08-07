@@ -15,7 +15,7 @@ If you want to host this service yourself, it can be easily done.
 * Just clone the repo or obtain a zip version of it
 * Assure you have node.js and npm installed
 * Execute ``npm install`` from command line to install all dependecies
-* Run the server with ``nodejs main.js`` (by default it open up port 3000)
+* Run the server with ``nodejs main.js`` (by default it opens up port 3000)
 * Profit?!
 
 ## Inspiration
