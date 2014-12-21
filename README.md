@@ -1,9 +1,6 @@
 # GitHub Buttons
 
 Showcase star count of any repo with an easy to generate image. No JS/iframes needed.   
-See an example below for **[awesome-scala repo](https://github.com/lauris/awesome-scala)**.
-
-[![Example GitHub button](http://github.h-s.io/stars/lauris/awesome-scala)](https://github.com/lauris/awesome-scala)
 
 ## Usage
 
